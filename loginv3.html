@@ -20,7 +20,8 @@
             align-items: center;
             position: relative;
             overflow-x: hidden;
-            padding: 20px;
+            overflow-y: auto;  /* ← 추가: 필요시에만 세로 스크롤 */
+            padding: 0;        /* ← 수정: 패딩 제거 */
         }
 
         /* 배경 장식 요소 */
@@ -52,7 +53,8 @@
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             overflow: hidden;
             width: 900px;
-            max-width: 100%;
+            max-width: calc(100% - 40px);  /* ← 수정: 좌우 여백 20px씩 */
+            margin: 20px;                   /* ← 추가: 상하좌우 여백 */
             display: flex;
             position: relative;
             z-index: 1;
@@ -316,8 +318,8 @@
                 padding: 15px;
                 min-height: 100vh;
                 align-items: flex-start;
-                padding-top: 30px;
-                padding-bottom: 30px;
+                padding-top: 0px;
+                padding-bottom: 0px;
             }
 
             body::before {
@@ -337,8 +339,8 @@
             .login-container {
                 flex-direction: column;
                 width: 100%;
-                max-width: 500px;
-                margin: 0 auto;
+                max-width: calc(100% - 30px);  /* ← 수정: 좌우 여백 15px씩 */
+                margin: 15px;                   /* ← 수정: 모바일 여백 */
             }
 
             .login-image {
