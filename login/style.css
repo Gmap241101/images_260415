@@ -145,7 +145,7 @@
             flex-shrink: 0;
         }
 
-        .company-logo svg {
+        .company-logo img { /*svg */
             width: 70px;
             height: 70px;
         }
@@ -536,7 +536,7 @@
                 margin-bottom: 18px;
             }
 
-            .company-logo svg {
+            .company-logo img { /* svg */
                 width: 40px;
                 height: 40px;
             }
@@ -676,7 +676,7 @@
                 height: 64px;
             }
 
-            .company-logo svg {
+            .company-logo img { /* svg */
                 width: 36px;
                 height: 36px;
             }
@@ -754,7 +754,7 @@
                 margin-bottom: 14px;
             }
 
-            .company-logo svg {
+            .company-logo img { /* svg */
                 width: 40px;
                 height: 40px;
             }
